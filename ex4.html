@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>document.querySelectorAll()</title>
+  </head>
+  <body>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+    </ul>
+    <ul class="results">
+      <li>Result one</li>
+      <li>Result two</li>
+    </ul>
+    <br>
+    <button onclick ="selectAll()">Select all</button>
+    <script>
+    /*
+    Use a CSS selector to select all li elements within the ul with
+    the class of "results". Print them out to the console.
+    */
+    function selectAll() {
+      var all = document.querySelectorAll('.results > li');
+      console.log(all);
+    }
+    </script>
+  </body>
+</html>
